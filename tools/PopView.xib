@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="6RM-C8-mgy" customClass="PopView">
+            <rect key="frame" x="0.0" y="0.0" width="387" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="华齐路xxx号" textAlignment="natural" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MO9-UP-yQQ" userLabel="address">
+                    <rect key="frame" x="86" y="37" width="293" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="l9H-Y3-vxF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="距离：500m" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QcU-gR-h2y" userLabel="distance">
+                    <rect key="frame" x="86" y="66" width="293" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="B7h-xD-RSB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MP8-nK-w1d">
+                    <rect key="frame" x="8" y="8" width="70" height="79"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="ctn-Mc-uwR"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="先锋水果" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4el-Tw-gRf" userLabel="shopName">
+                    <rect key="frame" x="86" y="8" width="293" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="8Dq-zs-DGK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="MO9-UP-yQQ" firstAttribute="leading" secondItem="MP8-nK-w1d" secondAttribute="trailing" constant="8" id="11I-VK-Sub"/>
+                <constraint firstAttribute="trailing" secondItem="4el-Tw-gRf" secondAttribute="trailing" constant="8" id="BUw-zY-59g"/>
+                <constraint firstItem="QcU-gR-h2y" firstAttribute="leading" secondItem="MP8-nK-w1d" secondAttribute="trailing" constant="8" id="Ggk-wZ-Noh"/>
+                <constraint firstItem="MP8-nK-w1d" firstAttribute="leading" secondItem="6RM-C8-mgy" secondAttribute="leading" constant="8" id="MKt-fG-Ncs"/>
+                <constraint firstItem="4el-Tw-gRf" firstAttribute="leading" secondItem="MP8-nK-w1d" secondAttribute="trailing" constant="8" id="RUx-C5-lup"/>
+                <constraint firstItem="MP8-nK-w1d" firstAttribute="top" secondItem="6RM-C8-mgy" secondAttribute="top" constant="8" id="W2c-EX-cEZ"/>
+                <constraint firstAttribute="bottom" secondItem="MP8-nK-w1d" secondAttribute="bottom" constant="8" id="W2p-px-X9V"/>
+                <constraint firstItem="4el-Tw-gRf" firstAttribute="top" secondItem="6RM-C8-mgy" secondAttribute="top" constant="8" id="XCX-Oj-qFX"/>
+                <constraint firstItem="MO9-UP-yQQ" firstAttribute="top" secondItem="4el-Tw-gRf" secondAttribute="bottom" constant="8" id="aLA-03-MbG"/>
+                <constraint firstAttribute="trailing" secondItem="QcU-gR-h2y" secondAttribute="trailing" constant="8" id="b5P-Dm-jGs"/>
+                <constraint firstAttribute="trailing" secondItem="MO9-UP-yQQ" secondAttribute="trailing" constant="8" id="m9D-Ex-bFs"/>
+                <constraint firstAttribute="bottom" secondItem="QcU-gR-h2y" secondAttribute="bottom" constant="8" id="ug0-ME-mjg"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="address" destination="MO9-UP-yQQ" id="pi3-I3-aRf"/>
+                <outlet property="distance" destination="QcU-gR-h2y" id="ygy-vY-oCj"/>
+                <outlet property="shopImageView" destination="MP8-nK-w1d" id="nB8-WG-JGz"/>
+                <outlet property="shopName" destination="4el-Tw-gRf" id="xhV-YP-yuZ"/>
+            </connections>
+            <point key="canvasLocation" x="352.5" y="-47.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="95" id="KGk-i7-Jjw" customClass="MessionCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="94.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Frs-ri-lwI">
+                        <rect key="frame" x="7" y="10" width="75" height="74.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75" id="yhp-CW-D2l"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="先锋水果" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gp6-WN-SkV" userLabel="name">
+                        <rect key="frame" x="92" y="5" width="218" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="dXd-bz-3XJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-08-10 16:45 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZR-5Q-JDv" userLabel="create_time">
+                        <rect key="frame" x="92" y="65" width="148" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="华齐路24号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCc-A1-Kfm" userLabel="street">
+                        <rect key="frame" x="92" y="40" width="148" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="t9o-la-Jn9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXe-el-C5s">
+                        <rect key="frame" x="250" y="43" width="60" height="41.5"/>
+                        <color key="backgroundColor" red="0.49984775460000003" green="0.68262915840000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="v7j-GA-fDK"/>
+                        </constraints>
+                        <state key="normal" title="提交"/>
+                        <connections>
+                            <action selector="cellCommitAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="arg-fi-dxk"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="LXe-el-C5s" firstAttribute="leading" secondItem="DZR-5Q-JDv" secondAttribute="trailing" constant="10" id="0zF-5f-bEb"/>
+                    <constraint firstItem="LXe-el-C5s" firstAttribute="top" secondItem="Gp6-WN-SkV" secondAttribute="bottom" constant="8" id="B0H-p4-dUL"/>
+                    <constraint firstItem="Frs-ri-lwI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Hfb-Dm-aEh"/>
+                    <constraint firstAttribute="bottom" secondItem="Frs-ri-lwI" secondAttribute="bottom" constant="10" id="IZo-Ja-LG8"/>
+                    <constraint firstItem="Gp6-WN-SkV" firstAttribute="leading" secondItem="Frs-ri-lwI" secondAttribute="trailing" constant="10" id="Jq0-do-yQY"/>
+                    <constraint firstItem="LXe-el-C5s" firstAttribute="leading" secondItem="kCc-A1-Kfm" secondAttribute="trailing" constant="10" id="LIP-gk-8KZ"/>
+                    <constraint firstItem="Gp6-WN-SkV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="NQO-pP-KYM"/>
+                    <constraint firstItem="kCc-A1-Kfm" firstAttribute="top" secondItem="Gp6-WN-SkV" secondAttribute="bottom" constant="5" id="O5m-tx-Cym"/>
+                    <constraint firstItem="Frs-ri-lwI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="7" id="W5W-k3-fre"/>
+                    <constraint firstItem="DZR-5Q-JDv" firstAttribute="leading" secondItem="Frs-ri-lwI" secondAttribute="trailing" constant="10" id="ZRI-sm-HWc"/>
+                    <constraint firstItem="kCc-A1-Kfm" firstAttribute="leading" secondItem="Frs-ri-lwI" secondAttribute="trailing" constant="10" id="aOf-MX-XNA"/>
+                    <constraint firstAttribute="trailing" secondItem="Gp6-WN-SkV" secondAttribute="trailing" constant="10" id="hZ1-cZ-xRe"/>
+                    <constraint firstAttribute="trailing" secondItem="LXe-el-C5s" secondAttribute="trailing" constant="10" id="nSZ-Aq-0YZ"/>
+                    <constraint firstItem="DZR-5Q-JDv" firstAttribute="top" secondItem="kCc-A1-Kfm" secondAttribute="bottom" constant="5" id="wS4-uX-ovj"/>
+                    <constraint firstAttribute="bottom" secondItem="DZR-5Q-JDv" secondAttribute="bottom" constant="9.5" id="ybh-RU-42x"/>
+                    <constraint firstAttribute="bottom" secondItem="LXe-el-C5s" secondAttribute="bottom" constant="10" id="zat-3a-0Vi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="createTimeLabel" destination="DZR-5Q-JDv" id="wx4-iW-sdr"/>
+                <outlet property="fruitImageView" destination="Frs-ri-lwI" id="sW7-ib-daL"/>
+                <outlet property="shopName" destination="Gp6-WN-SkV" id="ufJ-aF-s4D"/>
+                <outlet property="typeLabel" destination="kCc-A1-Kfm" id="Rim-kS-lf8"/>
+            </connections>
+            <point key="canvasLocation" x="355" y="165.5"/>
+        </tableViewCell>
+    </objects>
+</document>
